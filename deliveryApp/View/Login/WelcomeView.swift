@@ -1,16 +1,7 @@
-//
-//  ContentView.swift
-//  deliveryApp
-//
-//  Created by students on 17/10/46.
-//
-
-
 import SwiftUI
 
-struct ContentView: View {
+struct WelcomeView: View {
     var body: some View {
-        
         ZStack{
             Image("welcom_bg")
                 .resizable()
@@ -31,23 +22,24 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
-                Text("get your gloceries fast")
-                    .font(.customfont(.medium, fontSize:16))
-                    .foregroundColor(.white.opacity(0.8))
+                Text("Get your gloceries fast")
+                    .font(.customfont(.medium, fontSize: 16))
+                    .foregroundColor(.white.opacity(0.7))
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 30)
                 
                 NavigationLink{
-                                  
-                               } label: {
-                                   RoundButton(title: "Get Started"){
-                                   }
-                               }
+           
+                } label: {
+                    RoundButton(title: "Get Started"){
+                    }
+                }
                 
                 Spacer()
                     .frame(height: 80)
+                
             }
-            .padding(.horizontal,20)
+            .padding(.horizontal, 20)
         }
         .navigationTitle("")
         .ignoresSafeArea()
@@ -58,6 +50,6 @@ struct ContentView: View {
 
 #Preview {
     NavigationView{
-        ContentView()
+        WelcomeView()
     }
 }

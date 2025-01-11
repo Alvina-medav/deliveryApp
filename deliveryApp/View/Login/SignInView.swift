@@ -1,18 +1,11 @@
-//
-//  SignInView.swift
-//  deliveryApp
-//
-//  Created by students on 18/10/46.
-//
-
 import SwiftUI
 import CountryPicker
 
-struct SignInView: View {
+struct SingInView: View {
+    
     @State var txtMobile : String = ""
-    @State var isShower : Bool = false
+    @State var isShowPicker : Bool = false
     @State var countryObj : Country?
-   
     var body: some View {
         ZStack{
             
@@ -26,109 +19,124 @@ struct SignInView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: .screenWidth, height: .screenWidth)
-                    .padding(.bottom, 500)
                 Spacer()
             }
             
             ScrollView{
                 VStack{
                     Text("Get your groceries \nwith nectar")
-                       .font(.customfont(.semibold, fontSize: 27))
-                       .foregroundColor(.primaryText)
-                       .multilineTextAlignment(.leading)
-                       .padding(.top, 420)
-                       .padding(.trailing, 130)
-                       .padding(.bottom, 20)
+                        .font(.customfont(.semibold, fontSize: 26))
+                        .foregroundColor(.primaryText)
+                        .multilineTextAlignment(.leading)
+                        .padding(.top, 350)
+                        .padding(.trailing, 130)
+                        .padding(.bottom, 20)
                     
                     HStack{
                         Button{
-                            
+                            isShowPicker = true
                         } label: {
-                            
-                        }
-                        TextField("Enter mobile", text: $txtMobile)
-                            .frame(minWidth: 0, maxWidth: .infinity)
-                            .padding(.trailing,50)
-//                            .padding(.leading, 100)
-                        
-                    }
-                    Divider()
-                        .frame(width: 350)
-                  
-                    VStack{
-                        Text("or connect with social media")
-                            .foregroundColor(.textTitle)
-                            .font(.customfont(.semibold, fontSize: 16))
-                            .multilineTextAlignment(.center)
-                            .padding(.top, 30)
-                            .padding(.bottom, 20)
-                        
-                        
-                        HStack{
-                            
-                            Button{
+                            if let countryObj = countryObj{
+                                Text("\( countryObj.isoCode.getFlag())")
+                                    .font(.customfont(.medium, fontSize: 35))
+                                    .padding(.leading, 25)
                                 
-                            } label: {
-                                HStack{
-                                    Image("google_logo")
-                                        .resizable()
-                                        .frame(width:20,height: 20)
-                                        .padding(.trailing, 15)
-                                       
-                                }
-                                
-                                Text("Continue With Google")
-                                    .font(.customfont(.semibold, fontSize: 18))
-                                    .foregroundColor(.white)
-                                    .padding(.trailing, 15)
+                                Text("+\( countryObj.phoneCode )")
+                                    .font(.customfont(.medium, fontSize: 18))
+                                    .foregroundColor(.primaryText)
                             }
                         }
-                        .frame(width: 300,height: 50)
-                        .background(Color(hex: "5383EC"))
-                        .cornerRadius(20)
-                        .padding(.top, 10)
-                        
-                        .padding(.bottom, 5)
-                        
-                        Button {
-                            
-                        } label: {
-                            HStack{
-                                Image("fb_logo")
-                                 .resizable()
-                                 .scaledToFit()
-                                 .frame(width: 20, height: 20)
-                                 .padding(.trailing, 15)
-                                                                
-                                Text("Continue with Facebook")
-                                 .font(.customfont(.semibold, fontSize: 18))
-                                 .foregroundColor(.white)
-                                 .multilineTextAlignment(.center)
-                                 .padding(.trailing, 10)
-                                
-                            }.frame(width: 300,height: 50)
-                                .background(Color(hex: "4A6680"))
-                                .cornerRadius(20)
-                                .padding(.top, 10)
-                        }
-                        
-                        
+                        TextField("Enter Mobile", text: $txtMobile)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .padding(.trailing, 188)
                     }
-                    .padding(.bottom, 90)
-                
-                                       
+                    .padding(.bottom, 15)
+                    
+                    Divider()
+                        .frame(width: 350)
+                        .padding(.top,-23)
+                        .padding(.bottom, -600)
+                    
+                    VStack{
+                    
+                        Text("or connnect with social media")
+                            .font(.customfont(.semibold, fontSize: 16))
+                            .foregroundColor(.textTitle)
+                            .multilineTextAlignment(.center)
+                            .padding(.top,-10)
+                            .padding(.bottom, -100)
+                        
+                        HStack{
+                            Image("google")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40, height: 40)
+                                .padding(.trailing,5)
+                            Image("facebook")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40, height: 40)
+                                .padding(.trailing,5)
+                            Image("apple_logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 42, height: 42)
+                        }
+                    }
+                    .padding()
+                    
+                    NavigationLink {
+                        LoginView()
+                    } label: {
+                        Text("Continue with google")
+                            .font(.customfont(.semibold, fontSize: 18))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame( minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60 )
+                    .background(Color(hex: "5383EC"))
+                    .cornerRadius(20)
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 10)
+                    
+                    
+                    NavigationLink {
+                        SignUpView()
+                    } label: {
+                        Text("Continue with facebook")
+                            .font(.customfont(.semibold, fontSize: 18))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    }
+                    .frame( minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60 )
+                    .background(Color.primaryApp)
+                    .cornerRadius(20)
+                    .padding(.horizontal, 20)
+                    
+                   
                 }
-                .onAppear{
-                    self.$countryObj
-                }
+                .padding(.top, 5)
             }
             
+            
+
+            .onAppear{
+                self.countryObj = Country(phoneCode: "91", isoCode: "IN")
+            }
         }
+        .sheet(isPresented: $isShowPicker, content: {
+            CountryPickerUI(country: $countryObj)
+        })
         
-       
+        .navigationTitle("")
+        .ignoresSafeArea()
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
-    SignInView()
+    NavigationView{
+        SingInView()
+    }
 }
