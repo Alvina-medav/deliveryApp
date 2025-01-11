@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		AF9067C92D313B8F009C69BD /* FoodDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */; };
-		AF9067CB2D313B8F009C69BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067CA2D313B8F009C69BD /* ContentView.swift */; };
+		AF9067CB2D313B8F009C69BD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067CA2D313B8F009C69BD /* WelcomeView.swift */; };
 		AF9067CD2D313B90009C69BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9067CC2D313B90009C69BD /* Assets.xcassets */; };
 		AF9067D02D313B90009C69BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9067CF2D313B90009C69BD /* Preview Assets.xcassets */; };
+		AF9067D72D313BC3009C69BD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9067D62D313BC3009C69BD /* Launch Screen.storyboard */; };
+		AF9067E62D314F40009C69BD /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067E52D314F40009C69BD /* UIExtension.swift */; };
+		AFBD06602D325AB100E249FA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD065F2D325AB100E249FA /* SignInView.swift */; };
+		AFBD06622D325DB700E249FA /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD06612D325DB700E249FA /* CountryPickerUI.swift */; };
+		AFBD06652D32604C00E249FA /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = AFBD06642D32604C00E249FA /* CountryPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF9067C52D313B8F009C69BD /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryApp.swift; sourceTree = "<group>"; };
-		AF9067CA2D313B8F009C69BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AF9067CA2D313B8F009C69BD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		AF9067CC2D313B90009C69BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF9067CF2D313B90009C69BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF9067D62D313BC3009C69BD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		AF9067DC2D313D82009C69BD /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		AF9067DD2D313D90009C69BD /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		AF9067DE2D313D99009C69BD /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		AF9067DF2D313DF2009C69BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AF9067E52D314F40009C69BD /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		AFBD065F2D325AB100E249FA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		AFBD06612D325DB700E249FA /* CountryPickerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBD06652D32604C00E249FA /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +65,13 @@
 		AF9067C72D313B8F009C69BD /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				AF9067E42D3143C9009C69BD /* UIcommon */,
+				AF9067E02D3140C1009C69BD /* View */,
+				AF9067D82D313D32009C69BD /* Font */,
 				AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */,
-				AF9067CA2D313B8F009C69BD /* ContentView.swift */,
+				AF9067D62D313BC3009C69BD /* Launch Screen.storyboard */,
 				AF9067CC2D313B90009C69BD /* Assets.xcassets */,
+				AF9067DF2D313DF2009C69BD /* Info.plist */,
 				AF9067CE2D313B90009C69BD /* Preview Content */,
 			);
 			path = FoodDelivery;
@@ -65,6 +83,42 @@
 				AF9067CF2D313B90009C69BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AF9067D82D313D32009C69BD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AF9067DD2D313D90009C69BD /* Gilroy-Regular.ttf */,
+				AF9067DC2D313D82009C69BD /* Gilroy-SemiBold.ttf */,
+				AF9067DE2D313D99009C69BD /* Gilroy-Bold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		AF9067E02D3140C1009C69BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF9067E12D3140CF009C69BD /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF9067E12D3140CF009C69BD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AF9067CA2D313B8F009C69BD /* WelcomeView.swift */,
+				AFBD065F2D325AB100E249FA /* SignInView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AF9067E42D3143C9009C69BD /* UIcommon */ = {
+			isa = PBXGroup;
+			children = (
+				AF9067E52D314F40009C69BD /* UIExtension.swift */,
+				AFBD06612D325DB700E249FA /* CountryPickerUI.swift */,
+			);
+			path = UIcommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +137,9 @@
 			dependencies = (
 			);
 			name = FoodDelivery;
+			packageProductDependencies = (
+				AFBD06642D32604C00E249FA /* CountryPicker */,
+			);
 			productName = FoodDelivery;
 			productReference = AF9067C52D313B8F009C69BD /* FoodDelivery.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,9 @@
 				Base,
 			);
 			mainGroup = AF9067BC2D313B8F009C69BD;
+			packageReferences = (
+				AFBD06632D32604C00E249FA /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
 			productRefGroup = AF9067C62D313B8F009C69BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9067D72D313BC3009C69BD /* Launch Screen.storyboard in Resources */,
 				AF9067D02D313B90009C69BD /* Preview Assets.xcassets in Resources */,
 				AF9067CD2D313B90009C69BD /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF9067CB2D313B8F009C69BD /* ContentView.swift in Sources */,
+				AF9067CB2D313B8F009C69BD /* WelcomeView.swift in Sources */,
+				AF9067E62D314F40009C69BD /* UIExtension.swift in Sources */,
+				AFBD06622D325DB700E249FA /* CountryPickerUI.swift in Sources */,
+				AFBD06602D325AB100E249FA /* SignInView.swift in Sources */,
 				AF9067C92D313B8F009C69BD /* FoodDeliveryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +338,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FoodDelivery/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -286,9 +352,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alvina.FoodDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,9 +372,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FoodDelivery/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,9 +386,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alvina.FoodDelivery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -342,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFBD06632D32604C00E249FA /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFBD06642D32604C00E249FA /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFBD06632D32604C00E249FA /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF9067BD2D313B8F009C69BD /* Project object */;
 }
