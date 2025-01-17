@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF3CB5492D3A40B2009A1401 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CB5482D3A40B2009A1401 /* LoginView.swift */; };
+		AF3CB54B2D3A4554009A1401 /* LineTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CB54A2D3A4554009A1401 /* LineTextFeild.swift */; };
+		AF3CB54E2D3A484E009A1401 /* mainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CB54D2D3A484E009A1401 /* mainViewModel.swift */; };
 		AF9067C92D313B8F009C69BD /* FoodDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */; };
 		AF9067CB2D313B8F009C69BD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067CA2D313B8F009C69BD /* WelcomeView.swift */; };
 		AF9067CD2D313B90009C69BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9067CC2D313B90009C69BD /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF3CB5482D3A40B2009A1401 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AF3CB54A2D3A4554009A1401 /* LineTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextFeild.swift; sourceTree = "<group>"; };
+		AF3CB54D2D3A484E009A1401 /* mainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewModel.swift; sourceTree = "<group>"; };
 		AF9067C52D313B8F009C69BD /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryApp.swift; sourceTree = "<group>"; };
 		AF9067CA2D313B8F009C69BD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -46,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF3CB54C2D3A47C6009A1401 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF3CB54D2D3A484E009A1401 /* mainViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		AF9067BC2D313B8F009C69BD = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +81,7 @@
 			children = (
 				AF9067E42D3143C9009C69BD /* UIcommon */,
 				AF9067E02D3140C1009C69BD /* View */,
+				AF3CB54C2D3A47C6009A1401 /* View Model */,
 				AF9067D82D313D32009C69BD /* Font */,
 				AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */,
 				AF9067D62D313BC3009C69BD /* Launch Screen.storyboard */,
@@ -108,6 +123,7 @@
 			children = (
 				AF9067CA2D313B8F009C69BD /* WelcomeView.swift */,
 				AFBD065F2D325AB100E249FA /* SignInView.swift */,
+				AF3CB5482D3A40B2009A1401 /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -116,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				AF9067E52D314F40009C69BD /* UIExtension.swift */,
+				AF3CB54A2D3A4554009A1401 /* LineTextFeild.swift */,
 				AFBD06612D325DB700E249FA /* CountryPickerUI.swift */,
 			);
 			path = UIcommon;
@@ -198,11 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3CB5492D3A40B2009A1401 /* LoginView.swift in Sources */,
 				AF9067CB2D313B8F009C69BD /* WelcomeView.swift in Sources */,
 				AF9067E62D314F40009C69BD /* UIExtension.swift in Sources */,
 				AFBD06622D325DB700E249FA /* CountryPickerUI.swift in Sources */,
+				AF3CB54B2D3A4554009A1401 /* LineTextFeild.swift in Sources */,
 				AFBD06602D325AB100E249FA /* SignInView.swift in Sources */,
 				AF9067C92D313B8F009C69BD /* FoodDeliveryApp.swift in Sources */,
+				AF3CB54E2D3A484E009A1401 /* mainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
