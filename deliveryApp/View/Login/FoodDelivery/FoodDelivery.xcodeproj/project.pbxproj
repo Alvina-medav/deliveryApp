@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF3CB5492D3A40B2009A1401 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CB5482D3A40B2009A1401 /* LoginView.swift */; };
-		AF3CB54B2D3A4554009A1401 /* LineTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CB54A2D3A4554009A1401 /* LineTextFeild.swift */; };
-		AF3CB54E2D3A484E009A1401 /* mainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3CB54D2D3A484E009A1401 /* mainViewModel.swift */; };
+		AF07A1752D3BC42E00BF0213 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07A1742D3BC42E00BF0213 /* SignInView.swift */; };
+		AF07A1772D3BC56600BF0213 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07A1762D3BC56600BF0213 /* UIExtension.swift */; };
+		AF07A17A2D3BD0CF00BF0213 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07A1792D3BD0CF00BF0213 /* Country.swift */; };
+		AF07A17C2D3BD0F400BF0213 /* CountryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07A17B2D3BD0F400BF0213 /* CountryPickerView.swift */; };
+		AF07A17E2D3BD2C200BF0213 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07A17D2D3BD2C200BF0213 /* LoginView.swift */; };
+		AF07A1802D3BD6A800BF0213 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF07A17F2D3BD6A800BF0213 /* SignUp.swift */; };
 		AF9067C92D313B8F009C69BD /* FoodDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */; };
 		AF9067CB2D313B8F009C69BD /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067CA2D313B8F009C69BD /* WelcomeView.swift */; };
 		AF9067CD2D313B90009C69BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9067CC2D313B90009C69BD /* Assets.xcassets */; };
 		AF9067D02D313B90009C69BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9067CF2D313B90009C69BD /* Preview Assets.xcassets */; };
 		AF9067D72D313BC3009C69BD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9067D62D313BC3009C69BD /* Launch Screen.storyboard */; };
-		AF9067E62D314F40009C69BD /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9067E52D314F40009C69BD /* UIExtension.swift */; };
-		AFBD06602D325AB100E249FA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD065F2D325AB100E249FA /* SignInView.swift */; };
-		AFBD06622D325DB700E249FA /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBD06612D325DB700E249FA /* CountryPickerUI.swift */; };
-		AFBD06652D32604C00E249FA /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = AFBD06642D32604C00E249FA /* CountryPicker */; };
+		AFAD10962D3E46E2001C1CD9 /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD10952D3E46E2001C1CD9 /* LineTextField.swift */; };
+		AFAD10992D3E5A96001C1CD9 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = AFAD10982D3E5A96001C1CD9 /* iPhoneNumberField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF3CB5482D3A40B2009A1401 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		AF3CB54A2D3A4554009A1401 /* LineTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextFeild.swift; sourceTree = "<group>"; };
-		AF3CB54D2D3A484E009A1401 /* mainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewModel.swift; sourceTree = "<group>"; };
+		AF07A1742D3BC42E00BF0213 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInView.swift; path = ../SignInView.swift; sourceTree = "<group>"; };
+		AF07A1762D3BC56600BF0213 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		AF07A1792D3BD0CF00BF0213 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		AF07A17B2D3BD0F400BF0213 /* CountryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerView.swift; sourceTree = "<group>"; };
+		AF07A17D2D3BD2C200BF0213 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AF07A17F2D3BD6A800BF0213 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		AF9067C52D313B8F009C69BD /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryApp.swift; sourceTree = "<group>"; };
 		AF9067CA2D313B8F009C69BD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -35,9 +39,7 @@
 		AF9067DD2D313D90009C69BD /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		AF9067DE2D313D99009C69BD /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
 		AF9067DF2D313DF2009C69BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		AF9067E52D314F40009C69BD /* UIExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
-		AFBD065F2D325AB100E249FA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		AFBD06612D325DB700E249FA /* CountryPickerUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
+		AFAD10952D3E46E2001C1CD9 /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,19 +47,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFBD06652D32604C00E249FA /* CountryPicker in Frameworks */,
+				AFAD10992D3E5A96001C1CD9 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AF3CB54C2D3A47C6009A1401 /* View Model */ = {
+		AF07A1782D3BC8AE00BF0213 /* UICommon */ = {
 			isa = PBXGroup;
 			children = (
-				AF3CB54D2D3A484E009A1401 /* mainViewModel.swift */,
+				AF07A1762D3BC56600BF0213 /* UIExtension.swift */,
+				AF07A1792D3BD0CF00BF0213 /* Country.swift */,
+				AF07A17B2D3BD0F400BF0213 /* CountryPickerView.swift */,
+				AFAD10952D3E46E2001C1CD9 /* LineTextField.swift */,
 			);
-			path = "View Model";
+			path = UICommon;
 			sourceTree = "<group>";
 		};
 		AF9067BC2D313B8F009C69BD = {
@@ -79,9 +84,7 @@
 		AF9067C72D313B8F009C69BD /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				AF9067E42D3143C9009C69BD /* UIcommon */,
 				AF9067E02D3140C1009C69BD /* View */,
-				AF3CB54C2D3A47C6009A1401 /* View Model */,
 				AF9067D82D313D32009C69BD /* Font */,
 				AF9067C82D313B8F009C69BD /* FoodDeliveryApp.swift */,
 				AF9067D62D313BC3009C69BD /* Launch Screen.storyboard */,
@@ -113,6 +116,7 @@
 		AF9067E02D3140C1009C69BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF07A1782D3BC8AE00BF0213 /* UICommon */,
 				AF9067E12D3140CF009C69BD /* Login */,
 			);
 			path = View;
@@ -122,20 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				AF9067CA2D313B8F009C69BD /* WelcomeView.swift */,
-				AFBD065F2D325AB100E249FA /* SignInView.swift */,
-				AF3CB5482D3A40B2009A1401 /* LoginView.swift */,
+				AF07A1742D3BC42E00BF0213 /* SignInView.swift */,
+				AF07A17D2D3BD2C200BF0213 /* LoginView.swift */,
+				AF07A17F2D3BD6A800BF0213 /* SignUp.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		AF9067E42D3143C9009C69BD /* UIcommon */ = {
-			isa = PBXGroup;
-			children = (
-				AF9067E52D314F40009C69BD /* UIExtension.swift */,
-				AF3CB54A2D3A4554009A1401 /* LineTextFeild.swift */,
-				AFBD06612D325DB700E249FA /* CountryPickerUI.swift */,
-			);
-			path = UIcommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +150,7 @@
 			);
 			name = FoodDelivery;
 			packageProductDependencies = (
-				AFBD06642D32604C00E249FA /* CountryPicker */,
+				AFAD10982D3E5A96001C1CD9 /* iPhoneNumberField */,
 			);
 			productName = FoodDelivery;
 			productReference = AF9067C52D313B8F009C69BD /* FoodDelivery.app */;
@@ -186,7 +181,7 @@
 			);
 			mainGroup = AF9067BC2D313B8F009C69BD;
 			packageReferences = (
-				AFBD06632D32604C00E249FA /* XCRemoteSwiftPackageReference "CountryPicker" */,
+				AFAD10972D3E5A96001C1CD9 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
 			);
 			productRefGroup = AF9067C62D313B8F009C69BD /* Products */;
 			projectDirPath = "";
@@ -215,14 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3CB5492D3A40B2009A1401 /* LoginView.swift in Sources */,
+				AF07A1752D3BC42E00BF0213 /* SignInView.swift in Sources */,
+				AFAD10962D3E46E2001C1CD9 /* LineTextField.swift in Sources */,
+				AF07A17E2D3BD2C200BF0213 /* LoginView.swift in Sources */,
 				AF9067CB2D313B8F009C69BD /* WelcomeView.swift in Sources */,
-				AF9067E62D314F40009C69BD /* UIExtension.swift in Sources */,
-				AFBD06622D325DB700E249FA /* CountryPickerUI.swift in Sources */,
-				AF3CB54B2D3A4554009A1401 /* LineTextFeild.swift in Sources */,
-				AFBD06602D325AB100E249FA /* SignInView.swift in Sources */,
 				AF9067C92D313B8F009C69BD /* FoodDeliveryApp.swift in Sources */,
-				AF3CB54E2D3A484E009A1401 /* mainViewModel.swift in Sources */,
+				AF07A17A2D3BD0CF00BF0213 /* Country.swift in Sources */,
+				AF07A1802D3BD6A800BF0213 /* SignUp.swift in Sources */,
+				AF07A1772D3BC56600BF0213 /* UIExtension.swift in Sources */,
+				AF07A17C2D3BD0F400BF0213 /* CountryPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,21 +436,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AFBD06632D32604C00E249FA /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+		AFAD10972D3E5A96001C1CD9 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.3;
+				minimumVersion = 0.10.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AFBD06642D32604C00E249FA /* CountryPicker */ = {
+		AFAD10982D3E5A96001C1CD9 /* iPhoneNumberField */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFBD06632D32604C00E249FA /* XCRemoteSwiftPackageReference "CountryPicker" */;
-			productName = CountryPicker;
+			package = AFAD10972D3E5A96001C1CD9 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
